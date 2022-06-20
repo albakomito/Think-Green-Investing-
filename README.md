@@ -1,6 +1,6 @@
 # Project 2: Machine Learning & Algorithmic Trading
 ## Group 12
-Amany El Gouhary, Katharine Zenta, Nicolas Hernandes, Al Bakomito 
+Amany El Gouhary, Katharine Zenta, Nicolas Hernandesz, Al Bakomito 
 
 
 ## Code description
