@@ -6,14 +6,14 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 ## Code description
 ### Notebook 1 (.py file): Streamlit Deployment
 #### Part 1: Library & Image imports, User Interface ('UI') setup (ln 1-44)
-* In this section we: 
+In this section we: 
 
 * Import all libraries and their dependencies (ln 1-27). 
 * Create our project header, with our introduction,  project objective and upload our first image (ln 28-37). 
 * Set up our side bar with the 5 stocks to include in our portfolio, the names of our team members and our 2nd image (ln 38-44). 
 
 #### Part 2: Algorithmic Trading Outputs (ln 45-66)
-* In this section we: 
+In this section we: 
 * Pull our five Bollinger Band visualizations,  illustrating our portfolio totals compared to the S&P500 (ln 45-66). 
 * Conclude that, based on our Algorithmic Trading strategies, our portfolio is unlikely to outperform the S&P500, thus creating the need for machine learning models.  
 #### Part 3: Machine Learning Outputs (ln 67-80)
@@ -25,7 +25,7 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 ### Notebook 2: Algorithmic Trading & Analysis
 
 #### Data Preparation (ln 1-4)
-* In this section we: 
+In this section we: 
 
 * Execute our initial imports of libraries and their dependencies (ln 1). 
 * Initialize our  alpaca trade api, using both our public and secret keys (ln 2). 
@@ -40,7 +40,7 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 * Conclude by setting ticker information for 4 stocks above (excluding BEPC) and  Algonquin Power & Utilities Corp. (Nasdaq: 'AQN'). We overlay our portfolio constituents with the S&P500 ('SPY') and choose a daily timeframe (all ln 4).  
 
 #### Five-year period: Jan '19 through Jun '22 (ln 5-21)
-* In this section we: 
+In this section we: 
 * Set our start and end date. We start in January 2019, as this followed the worst December in the stock market since 1931, and to avoid overfitting our model. We choose our end date as June 15th, 2022, following 10 days of significant losses in the stock market, driven by Federal Reserve monetary tightening (highest single interest rate increase since the '90s), increased recessionary risk, and strong inflation forecasts. Finally, we apply the get_tickers_data function (from ln 3) to our time frame, and create the df tickers_data (ln 5). 
 * Drop na's from our df tickers_data (created in ln 5) and display our cleaned df, comprising our 5 stocks and the S&P500 ('SPY') index (ln 6). 
 * Create the  function  'algo_trading', which returns our Bollinger Bands df, after determining Bollinger Bands for the Dataset, concatenating the Bollinger Bands to the DataFrame, calculating RSI, and generating the trading signals 1 (entry) or -1 (exit) for a long position trading algorithm (ln 7). 
@@ -51,7 +51,7 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 
 ### Notebook 3: Machine Learning Models & Analysis 
 #### Data Preparation (ln 1-5). 
-* In this section we:
+In this section we:
 * Complete our initial imports (ln 1).  
 * Set the random seed for reproducibility (ln 2).
 * Initialize alpaca trade api, using our public and secret keys (ln 3). 
@@ -59,7 +59,7 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 * Similar to Notebook 2 (ln 4), we define the top-performing stocks and set the ticker information, adding AQN (ln 5). 
 
 #### Five-year period: Jan '19 through Jun '22 (ln 6-15)
-* In this section we: 
+In this section we: 
 * Apply the get_tickers_data function (from ln 4) to our time frame (see Notebook 2, ln 5), and create the df tickers_data (ln 6). 
 * Create an equal-weight portfolio, using the 5 stocks in the tickers_data df (ln 7). 
 * Create a plot comprising the value of our portfolio from January 2019 through June 15th, 2022 (ln 8). 
