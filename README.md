@@ -39,7 +39,7 @@ In this section we:
 
 * Conclude by setting ticker information for 4 stocks above (excluding BEPC) and  Algonquin Power & Utilities Corp. (Nasdaq: 'AQN'). We overlay our portfolio constituents with the S&P500 ('SPY') and choose a daily timeframe (all ln 4).  
 
-#### Five-year period: Jan '19 through Jun '22 (ln 5-21)
+#### Five-year period Portfolio: Jan '19 through Jun '22 (ln 5-21)
 In this section we: 
 * Set our start and end date. We start in January 2019, as this followed the worst December in the stock market since 1931, and to avoid overfitting our model. We choose our end date as June 15th, 2022, following 10 days of significant losses in the stock market, driven by Federal Reserve monetary tightening (highest single interest rate increase since the '90s), increased recessionary risk, and strong inflation forecasts. Finally, we apply the get_tickers_data function (from ln 3) to our time frame, and create the df tickers_data (ln 5). 
 * Drop na's from our df tickers_data (created in ln 5) and display our cleaned df, comprising our 5 stocks and the S&P500 ('SPY') index (ln 6). 
@@ -58,7 +58,7 @@ In this section we:
 * Create the function get_tickers_data that pulls our tickers' daily closing prices in the given time period using alpaca trade api, and returns a df with the tickers, and closing prices as a two level column structured df with index defined as date (ln 4). 
 * Similar to Notebook 2 (ln 4), we define the top-performing stocks and set the ticker information, adding AQN (ln 5). 
 
-#### Five-year period: Jan '19 through Jun '22 (ln 6-15)
+#### Five-year period Portfolio: Jan '19 through Jun '22 (ln 6-15)
 In this section we: 
 * Apply the get_tickers_data function (from ln 4) to our time frame (see Notebook 2, ln 5), and create the df tickers_data (ln 6). 
 * Create an equal-weight portfolio, using the 5 stocks in the tickers_data df (ln 7). 
