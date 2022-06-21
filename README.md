@@ -17,7 +17,7 @@ In this section we:
 * Pull our five Bollinger Band visualizations,  illustrating our portfolio totals compared to the S&P500 (ln 45-66). 
 * Conclude that, based on our Algorithmic Trading strategies, our portfolio is unlikely to outperform the S&P500, thus creating the need for machine learning models.  
 #### Part 3: Machine Learning Outputs (ln 67-80)
-* In this section we: 
+In this section we: 
 * Pull our historical portfolio visualization,  illustrating the superior return of $100000 invested in our portfolio relative to the S&P500 between January 2019 and     mid-June 2022 (ln 67-73). 
 * Illustrate our Portfolio's predicted performance compared to the S&P500, using a Long Short-term Memory Network (LSTM), one level sequential model over 10 days (ln 73-77). 
 * Zoom in on our validation and prediction period, and  conclude that our portfolio is likely to outperform the S&P500 over the next 10 trading days(ln 78-80). 
