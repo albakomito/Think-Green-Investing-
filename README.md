@@ -84,7 +84,7 @@ After applyig the LSTM and 30 day Prediction model, we found that our portfolio 
 Of course this model may need further review and analysis to make sure the findings are indeed correct. In addition, there are many unknown factors that can affect these results in the future. We hope that our portfolio continues on this upward trend and due to the objective of many countries to reduce their CO2 emissions significantly by 2050, we expect these stocks to continue to grow in the future. 
 
 ### Notebook (.py file): Streamlit Deployment
-The following will decribe the steps involved in deployment of streamlit for the findings in our project.
+The following  decribes the steps involved in deployment of Streamlit for the findings in our project. Please click here to view our deployed UI: https://albakomito-g12-project-2-streamlitapp-5lhj5r.streamlitapp.com/. 
 
 #### Part 1: Library & Image imports, User Interface ('UI') setup (ln 1-29) 
 In this section we: 
