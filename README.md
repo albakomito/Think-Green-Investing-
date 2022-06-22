@@ -119,3 +119,4 @@ In general, investing in renewable energy seems to have positive results, which 
 ### Resources 
 https://taraenergy.com/blog/renewable-energy-need-to-know/
 https://www.azocleantech.com/article.aspx?ArticleID=965
+https://towardsdatascience.com/time-series-forecasting-with-recurrent-neural-networks-74674e289816
