@@ -5,22 +5,22 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 
 ## Code description
 ### Notebook 1 (.py file): Streamlit Deployment
-#### Part 1: Library & Image imports, User Interface ('UI') setup (ln 1-44)
+#### Part 1: Library & Image imports, User Interface ('UI') setup (ln 1-29)
 In this section we: 
 
-* Import all libraries and their dependencies (ln 1-27). 
-* Create our project header, with our introduction,  project objective and upload our first image (ln 28-37). 
-* Set up our side bar with the 5 stocks to include in our portfolio, the names of our team members and our 2nd image (ln 38-44). 
+* Import all libraries and their dependencies (ln 1-12). 
+* Create our project header, with our introduction,  project objective and upload our first image (ln 13-22). 
+* Set up our side bar with the 5 stocks to include in our portfolio, the names of our team members and our 2nd image (ln 23-29). 
 
-#### Part 2: Algorithmic Trading Outputs (ln 45-66)
+#### Part 2: Algorithmic Trading Outputs (ln 30-51)
 In this section we: 
-* Pull our five Bollinger Band visualizations,  illustrating our portfolio totals compared to the S&P500 (ln 45-66). 
+* Pull our five Bollinger Band visualizations,  illustrating our portfolio totals compared to the S&P500 (ln 30-51). 
 * Conclude that, based on our Algorithmic Trading strategies, our portfolio is unlikely to outperform the S&P500, thus creating the need for machine learning models.  
-#### Part 3: Machine Learning Outputs (ln 67-80)
+#### Part 3: Machine Learning Outputs (ln 52-65)
 In this section we: 
-* Pull our historical portfolio visualization,  illustrating the superior return of $100000 invested in our portfolio relative to the S&P500 between January 2019 and     mid-June 2022 (ln 67-73). 
-* Illustrate our Portfolio's predicted performance compared to the S&P500, using a Long Short-term Memory Network (LSTM), one level sequential model over 10 days (ln 73-77). 
-* Zoom in on our validation and prediction period, and  conclude that our portfolio is likely to outperform the S&P500 over the next 10 trading days(ln 78-80). 
+* Pull our historical portfolio visualization,  illustrating the superior return of $100000 invested in our portfolio relative to the S&P500 between January 2019 and     mid-June 2022 (ln 52-58). 
+* Illustrate our Portfolio's predicted performance compared to the S&P500, using a Long Short-term Memory Network (LSTM), one level sequential model over 10 days (ln 59-65). 
+* Conclude that during our validation and prediction period,  our portfolio is likely to outperform the S&P500 over the next 10 trading days. 
 
 ### Notebook 2: Algorithmic Trading & Analysis
 
