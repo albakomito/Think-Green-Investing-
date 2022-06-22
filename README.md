@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/99312687/175099873-19f75476-b014-40c2-97d2-16e12625226b.png" width="600" height="400">
 
-The purpose of this project is to use algorithmic trading and machine learning to show our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. The following will provide a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we used Streamlit as a frontend development tool to display our result in a user friendly avenue.
+The purpose of this project is to use algorithmic trading and machine learning to show that our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. We compare our portfolio to the S&P500 with these analysis because the S&P500 index is a good indictor of how the overall stock market is doing during the dates we have chosen. Therefore, if our portfolio outperforms the S&P500 it shows that it is a profitable investment that is doing better than the overall market. The following will provide a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we used Streamlit as a frontend development tool to display our result in a user friendly avenue.
 
 ## Group 12
 Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito 
@@ -38,7 +38,7 @@ In this section we:
 The purpose of this section is to use alogrithmic trading to show that our renewable energy portfolio provides reasonable returns comparable, if not better than the S&P 500. While developing this strategy, we experienced many trial and errors. Many other stratgies such as DMAC, sentiment analysis and EMA were explored. 
 * We decided to use bollinger bands and relative strength index (RSI) in our trading strategy as it had potential to yield good results. The following shows a graph of our strategy applied to the S&P 500:
 
-<img src="https://user-images.githubusercontent.com/99312687/175101519-c5fcec9c-3d57-49cd-b73b-6c3303792061.png" width="800" height="300">
+<img src="https://user-images.githubusercontent.com/99312687/175101519-c5fcec9c-3d57-49cd-b73b-6c3303792061.png" width="800" height="400">
 
 * Below is our trading strategy applied to our portfolio as a whole:
 
@@ -70,6 +70,18 @@ In this section we:
 
 ### Machine Learning Findings
 The purpose of this section was to use Long short-term Memory(LSTM) and 30-day Prediction to simulate a predictive machine learning model that analyzes future prices of our renewable energy portfolio in comparison to the S&P500. 
+* Historically, when looking at our three and a half year timeframe, the renewable energy portfolio seems to outperform the S&P500, as seen in the graph below:
+
+<img src= "https://user-images.githubusercontent.com/99312687/175106838-cb1d56f9-29f4-44db-a41b-23418d119851.png" width="800" height="300">
+
+After applyig the LSTM and 30 day Prediction model, we found that our portfolio appears to continue this upward trend in returns and continues to do better than the S&P500. Below is an overall graph showing our results and a zoomed in look at our prediction model results:
+
+<img src= "https://user-images.githubusercontent.com/99312687/175108321-605eeb09-5fec-4321-a65d-7f33f2bb679b.png" width="800" height="300">
+
+<img src= "https://user-images.githubusercontent.com/99312687/175108535-31fb0b97-2925-4d24-a2e7-9764f0984f94.png" width="600" height="200">
+
+
+Of course this model may need further review and analysis to make sure the findings are indeed correct. In addition, there are many unknown factors that can affect these results in the future. We hope that our portfolio continues on this upward trend and due to the objective of many countries to reduce their CO2 emissions significantly by 2050, we expect these stocks to continue to grow in the future. 
 
 ### Notebook (.py file): Streamlit Deployment
 The following will decribe the steps involved in deployment of streamlit for the findings in our project.
@@ -92,7 +104,18 @@ In this section we:
 * Conclude that during our validation and prediction period,  our portfolio is likely to outperform the S&P500 over the next 10 trading days. 
 
 ### Key Takeaways and Conclusion
+After our deployment and analysis of our code we have made the following conclusions:
+* Since 2019 green stocks perform better than SP500. Key drivers: increase in projects in the solar industry, post covid recovery, impact of Russia – Ukraine conflict
+* As seen with algorithmic trading, Green Energy stocks double the profit vs SP500 driven by SEDG
+* Based on the LSTM simple model that was implemented, Green Stocks are expected to continue to outperform the SP500
+With these findings we conclude that our next steps for potentially project 3 are: 
+* Consider more variables for this LSTM model and explore alternatives ML models to predict the performance of the portfolio vs SP500
+
+<img src= "https://user-images.githubusercontent.com/99312687/175111430-6e167b3c-f788-4fa1-8091-dab72e4a5e5b.png" width="600" height="400">
+
+
+In general, investing in renewable energy seems to have positive results, which of course we are excited to see! We hope this continues in the future and helps show investors to consider adding renewable energy in their investment strategy as it is not only profitable, but has a positive overall global impact. 
 
 ### Resources 
 https://taraenergy.com/blog/renewable-energy-need-to-know/
-
+https://www.azocleantech.com/article.aspx?ArticleID=965
