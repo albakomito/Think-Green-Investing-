@@ -1,6 +1,6 @@
 # Project 2: Think Green Investing
 
-
+<img src="https://user-images.githubusercontent.com/99312687/175099873-19f75476-b014-40c2-97d2-16e12625226b.png" width="500" height="300">
 
 The purpose of this project is to use algorithmic trading and machine learning to show our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. The following will provide a breif description of how we gathered the data and developed our code, followed by our findings after analysing the data. 
 
