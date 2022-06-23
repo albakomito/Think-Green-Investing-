@@ -36,15 +36,15 @@ In this section we:
 
 ### Algorithmic Trading Findings 
 The purpose of this section is to use alogrithmic trading to show that our renewable energy portfolio provides reasonable returns comparable, if not better than the S&P 500. While developing this strategy, we experienced many trial and errors. Many other stratgies such as DMAC, sentiment analysis and EMA were explored. 
-* We decided to use bollinger bands and relative strength index (RSI) in our trading strategy as it had potential to yield good results. The following shows a graph of our strategy applied to the S&P 500:
+* We decided to use bollinger bands and relative strength index (RSI) in our trading strategy as it had potential to yield good results. The following shows a graph of our strategy applied to the S&P 500. This graph applies an initial capital of $100,000 and ends with with portfolio holdings of $137175:
 
-<img src="https://user-images.githubusercontent.com/99312687/175101519-c5fcec9c-3d57-49cd-b73b-6c3303792061.png" width="800" height="400">
+<img src="https://user-images.githubusercontent.com/99312687/175195649-263d754c-5943-4c33-913e-6b46de7ada7a.png" width="800" height="400">
 
-* Below is our trading strategy applied to our portfolio as a whole:
+* Below is our trading strategy applied to our renewable energy portfolio as a whole. This graph applies an initial capital of $100,000 and ends with with portfolio holdings of $150284:
 
-<img src="https://user-images.githubusercontent.com/99312687/175100755-ea621f6c-61c1-4255-9e07-700241538143.png" width="800" height="300">
+<img src="https://user-images.githubusercontent.com/99312687/175195533-8a5e8737-4145-4e72-af47-027c2c79cd2b.png" width="800" height="300">
 
-However, after, again, more trial and error, we found our companies individually did not outperform the S&P 500. This could have been perhaps due to the more volitile trends of the individual companies in comparison to the steady upward trend of the S&P500. Or simply perhaps with more time we could have optimized and adjusted our code to develop a more refined strategy that would give us better results. Interestingly, when combining our portfolio into weight averages as a whole, the strategy yielded results doubling that of the S&P500. We believe this could be due to Solar Edge Technologies, which had increased its closing prices from about $35 to $267 by the end of our chosen timeframe. However, this is to be analyzed further to ensure these are accurate results. Due to time constraints and potential room for improvement with our algorithmic trading strategy, we decided to focus the machine learning aspect of the project on predicting the potential returns in comparison to the S&P 500, which as we will see below yielded more desirable results.
+However, after, again, more trial and error, we found our companies individually did not always outperform the S&P 500. This could have been perhaps due to the more volitile trends of the individual companies in comparison to the steady upward trend of the S&P500. Or simply perhaps with more time we could have optimized and adjusted our code to develop a more refined strategy that would give us better results. Interestingly, when combining our portfolio into weight averages as a whole, the strategy yielded results greater that of the S&P500. We believe this could be due to Solar Edge Technologies, which had increased its closing prices from about $35 to $267 by the end of our chosen timeframe. However, this is to be analyzed further to ensure these are accurate results. Due to time constraints and potential room for improvement with our algorithmic trading strategy, we decided to focus the machine learning aspect of the project on predicting the potential returns in comparison to the S&P 500, which as we will see below yielded more desirable results.
 
 ### Notebook: Machine Learning Models & Analysis 
 #### Data Preparation (ln 1-4). 
