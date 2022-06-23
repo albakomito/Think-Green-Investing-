@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/99312687/175099873-19f75476-b014-40c2-97d2-16e12625226b.png" width="600" height="400">
 
-The purpose of this project is to use algorithmic trading and machine learning to show that our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. We compare our portfolio to the S&P500 with these analysis because the S&P500 index is a good indictor of how the overall stock market is doing during the dates we have chosen. Therefore, if our portfolio outperforms the S&P500 it shows that it is a profitable investment that is doing better than the overall market. The following will provide a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we used Streamlit as a frontend development tool to display our result in a user friendly avenue.
+Our project's purpose is to use Algorithmic Trading and Machine Learning to demonstrate that our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. We compare our portfolio to the S&P500 index with this analysis because the S&P500 is a good indicator of overall stock market performance during the dates we have chosen. Therefore, if our portfolio outperforms the S&P500 it shows that it is a profitable investment that is outperforming the overall market. The following provides a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we use Streamlit as a frontend development tool to display our result in a user friendly UI. 
 
 ## Group 12
 Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito 
@@ -14,7 +14,7 @@ Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito
 #### Data Preparation (ln 1-4)
 In this section we: 
 * Execute our initial imports of libraries (ln 1). 
-* We use the alpaca trade api in order to gather the necessary data (ln 2). 
+* Use the alpaca trade api in order to gather the necessary data (ln 2). 
 * Create a function ('get_tickers_data')that pulls our 5 tickers' daily closing prices in the given time period using alpaca trade api (ln 3). This section pulls and cleans the data with the provided function.
 * Define the stocks in the solar/wind energy portfolio. The companies are:
    *  First Solar (FSLR) 
@@ -44,29 +44,29 @@ The purpose of this section is to use alogrithmic trading to show that our renew
 
 <img src="https://user-images.githubusercontent.com/99312687/175100755-ea621f6c-61c1-4255-9e07-700241538143.png" width="800" height="300">
 
-However, after, again, more trail and error, we found our companies individually did not outperform the S&P 500. This could have been perhaps due to the more volitile trends of the invidual companies in comparison to the steady upward trend of the S&P500. Or simply perhaps with more time we could have optimized and adjusted our code to develop a more refined strategy that would give us better results. Interestingly, when combining our portfolio into weight averages as a whole, the strategy yield results doubling that of the S&P500. We believe this could be due to Solar Edge Technologies, which had increased it's closing proces from about $35 to $267 by the end of our chosen timeframe. However, this is to be analyzed further to ensure these are accurate results. Due to time constraints and potential room for improvement with our algorithmic trading strategy, we decided to focus the machine learning aspect of the project on predicting the potential returns in comparision to the S&P 500, which as we will see below yielded more desirable results.
+However, after, again, more trial and error, we found our companies individually did not outperform the S&P 500. This could have been perhaps due to the more volitile trends of the individual companies in comparison to the steady upward trend of the S&P500. Or simply perhaps with more time we could have optimized and adjusted our code to develop a more refined strategy that would give us better results. Interestingly, when combining our portfolio into weight averages as a whole, the strategy yielded results doubling that of the S&P500. We believe this could be due to Solar Edge Technologies, which had increased its closing prices from about $35 to $267 by the end of our chosen timeframe. However, this is to be analyzed further to ensure these are accurate results. Due to time constraints and potential room for improvement with our algorithmic trading strategy, we decided to focus the machine learning aspect of the project on predicting the potential returns in comparison to the S&P 500, which as we will see below yielded more desirable results.
 
 ### Notebook: Machine Learning Models & Analysis 
-#### Data Preparation (ln 1-5). 
+#### Data Preparation (ln 1-4). 
 In this section we:
 * Complete our initial imports (ln 1).  
-* Set the random seed for reproducibility (ln 2).
-* Initialize alpaca trade api, using our public and secret keys, to gather the necessary data (ln 3). 
-* Create the function get_tickers_data that pulls our tickers' daily closing prices in the given time period using alpaca trade api, and returns a df with the tickers, and closing prices as a two level column structured df with index defined as date (ln 4). 
-* Similar to Notebook 2 (ln 4), we define the intial 4 top-performing stocks and set the ticker information, adding AQN for this project (ln 5). 
+* Set the random seed for reproducibility.
+* Initialize alpaca_trade_api, using our public and secret keys, to gather the necessary data (ln 2). 
+* Create the function get_tickers_data that pulls our tickers' daily closing prices in the given time period using alpaca trade api, and returns a df with the tickers, and closing prices as a two level column structured df with index defined as date (ln 3). 
+* Define the intial 5 top-performing stocks and set the ticker information (ln 4). 
 
-#### Three and a half-year period Portfolio: Jan '19 through Jun '22 (ln 6-15)
+#### Three and a half-year period Portfolio: Jan '19 through Jun '22 (ln 5-14)
 In this section we: 
-* Apply the get_tickers_data function (from ln 4) to our time frame (see Notebook 2, ln 5), and create the dataframe tickers_data (ln 6). 
-* Create an equal-weight portfolio, using the 5 stocks in the tickers_data df (ln 7). 
-* Create a plot comprising the value of our portfolio from January 2019 through June 15th, 2022 (ln 8). 
-* Test our data from the tickers_data df (ln 9). 
-* Set our train_ and test_ generators respectively over a 10-day period (ln 10). 
-* Create our LSTM model, and fit the model to our train_generator (ln 11). 
-* Perform a prediction using our test_generator (ln 12). 
-* Print a line chart comprised of our historical data and our prediction (ln 13). 
-* Create the 'predict(num_prediction, model)' function that returns a list of predictions. Create the 'predict_dates(num_prediction)' function that returns prediction dates. Finally, we apply both dates to return a forecast of 30 predictions and prediction dates (ln 14). 
-* Create a plot consisting of our historical data, prediction and ground truth (ln 15).  
+* Apply the get_tickers_data function (from ln 4) to our time frame, and create the dataframe tickers_data (ln 5). 
+* Create an equal-weight portfolio, using the 5 stocks in the tickers_data df (ln 6). 
+* Create a plot comprising the value of our portfolio from January 2019 through June 15th, 2022 (ln 7). 
+* Test our data from the tickers_data df (ln 8). 
+* Set our train_ and test_ generators respectively over a 10-day period (ln 9). 
+* Create our LSTM model, and fit the model to our train_generator (ln 10). 
+* Perform a prediction using our test_generator (ln 11). 
+* Create the 'predict(close_data, num_prediction, model, look_back)' function that returns a prediction list. Create the 'forecast_close(tickers_df, look_back, model,num_prediction)' that returns forecasts and forecast dates (ln 12). 
+* Forecast the portfolio and SPY trend in the following 10 days(ln 13). 
+* Create a plot consisting of our historical data, prediction and ground truth (ln 14).  
 
 ### Machine Learning Findings
 The purpose of this section was to use Long short-term Memory(LSTM) and 30-day Prediction to simulate a predictive machine learning model that analyzes future prices of our renewable energy portfolio in comparison to the S&P500. 
