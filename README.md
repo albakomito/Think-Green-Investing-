@@ -108,8 +108,7 @@ After our deployment and analysis of our code we have made the following conclus
 * Since 2019 green stocks perform better than SP500. Key drivers: increase in projects in the solar industry, post covid recovery, impact of Russia – Ukraine conflict
 * As seen with algorithmic trading, Green Energy stocks double the profit vs SP500 driven by SEDG
 * Based on the LSTM simple model that was implemented, Green Stocks are expected to continue to outperform the SP500
-With these findings we conclude that our next steps for potentially project 3 are: 
-* Consider more variables for this LSTM model and explore alternatives ML models to predict the performance of the portfolio vs SP500
+* With these findings we conclude that our next steps for potentially project 3 are: Consider more variables for this LSTM model and explore alternatives ML models to predict the performance of the portfolio vs SP500
 
 <img src= "https://user-images.githubusercontent.com/99312687/175111430-6e167b3c-f788-4fa1-8091-dab72e4a5e5b.png" width="600" height="400">
 
