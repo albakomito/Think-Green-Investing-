@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/99312687/175099873-19f75476-b014-40c2-97d2-16e12625226b.png" width="600" height="400">
 
-Our project's purpose is to use Algorithmic Trading and Machine Learning to demonstrate that our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. We compare our portfolio to the S&P500 index with this analysis because the S&P500 is a good indicator of overall stock market performance during the dates we have chosen. Therefore, if our portfolio outperforms the S&P500 it shows that it is a profitable investment that is outperforming the overall market. The following provides a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we use Streamlit (https://albakomito-g12-project-2-streamlitapp-5lhj5r.streamlitapp.com/) as a frontend development tool to display our result in a user friendly UI. 
+Our project's purpose is to use Algorithmic Trading and Machine Learning to demonstrate that our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. We compare our portfolio to the S&P500 index with this analysis because the S&P500 is a good indicator of overall stock market performance during the dates we have chosen. Therefore, if our portfolio outperforms the S&P500 it shows that it is a profitable investment that is outperforming the overall market. The following provides a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we use Streamlit (https://albakomito-g12-project-2-streamlitapp-sdqrij.streamlitapp.com/) as a frontend development tool to display our result in a user friendly UI. 
 
 ## Group 12
 Amany El Gouhary, Katharine Zenta, Nicolas Hernandez, Al Bakomito 
@@ -84,7 +84,7 @@ After applyig the LSTM and 30 day Prediction model, we found that our portfolio 
 Of course this model may need further review and analysis to make sure the findings are indeed correct. In addition, there are many unknown factors that can affect these results in the future. We hope that our portfolio continues on this upward trend and due to the objective of many countries to reduce their CO2 emissions significantly by 2050, we expect these stocks to continue to grow in the future. 
 
 ### Notebook (.py file): Streamlit Deployment
-The following  decribes the steps involved in deployment of Streamlit for the findings in our project. Please click here to view our deployed UI: https://albakomito-g12-project-2-streamlitapp-5lhj5r.streamlitapp.com/. 
+The following  decribes the steps involved in deployment of Streamlit for the findings in our project. Please click here to view our deployed UI: https://albakomito-g12-project-2-streamlitapp-sdqrij.streamlitapp.com/. 
 
 #### Part 1: Library & Image imports, User Interface ('UI') setup (ln 1-29) 
 In this section we: 
@@ -92,15 +92,15 @@ In this section we:
 * Create our project header, with our introduction,  project objective and upload our first image (ln 13-22). 
 * Set up our side bar with the 5 stocks to include in our portfolio, the names of our team members and our 2nd image (ln 23-29). 
 
-#### Part 2: Algorithmic Trading Outputs (ln 30-51)
+#### Part 2: Algorithmic Trading Outputs (ln 30-39)
 In this section we: 
-* Pull our five Bollinger Band visualizations,  illustrating our portfolio totals compared to the S&P500 (ln 30-51). 
-* Conclude that, based on our Algorithmic Trading strategies, our portfolio is unlikely to outperform the S&P500, thus creating the need for machine learning models.  
+* Pull our two Bollinger Band visualizations,  illustrating our portfolio totals compared to the S&P500 (ln 30-39). 
+* Conclude that, based on our Algorithmic Trading strategies, our portfolio is likely to outperform the S&P500 by 35% (given an initial investment of US$100000). We will conduct further testing in our machine learning models to confirm our findings.
 
-#### Part 3: Machine Learning Outputs (ln 52-65)
+#### Part 3: Machine Learning Outputs (ln 40-53)
 In this section we: 
-* Pull our historical portfolio visualization,  illustrating the superior return of $100000 invested in our portfolio relative to the S&P500 between January 2019 and mid-June 2022 (ln 52-58). 
-* Illustrate our Portfolio's predicted performance compared to the S&P500, using a Long Short-term Memory Network (LSTM), one level sequential model over 10 days (ln 59-65). 
+* Pull our historical portfolio visualization,  illustrating the superior return of $100000 invested in our portfolio relative to the S&P500 between January 2019 and mid-June 2022 (ln 40-46). 
+* Illustrate our Portfolio's predicted performance compared to the S&P500, using a Long Short-term Memory Network (LSTM), one level sequential model over 10 days (ln 47-53). 
 * Conclude that during our validation and prediction period,  our portfolio is likely to outperform the S&P500 over the next 10 trading days. 
 
 ### Key Takeaways and Conclusion
