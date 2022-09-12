@@ -1,4 +1,4 @@
-# Project 2: Think Green Investing
+# Think Green Investing
 
 <img src="https://user-images.githubusercontent.com/99312687/175099873-19f75476-b014-40c2-97d2-16e12625226b.png" width="600" height="400">
 
