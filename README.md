@@ -2,6 +2,13 @@
 
 <img src="https://user-images.githubusercontent.com/99312687/175099873-19f75476-b014-40c2-97d2-16e12625226b.png" width="600" height="400">
 
+## Source Files
+
+## Output Notebooks 
+* Streamlit deployment: https://albakomito-g12-project-2-streamlitapp-sdqrij.streamlitapp.com/
+* Note: all coding instructions are contained within each individual notebook. 
+
+## Summary (Introduction)
 Our project's purpose is to use Algorithmic Trading and Machine Learning to demonstrate that our renewable energy portfolio is a good investment for environmentally conscious and socially responsible investors. We compare our portfolio to the S&P500 index with this analysis because the S&P500 is a good indicator of overall stock market performance during the dates we have chosen. Therefore, if our portfolio outperforms the S&P500 it shows that it is a profitable investment that is outperforming the overall market. The following provides a brief description of how we gathered the data and developed our code, followed by our findings after analysing the data. Finally, we use Streamlit (https://albakomito-g12-project-2-streamlitapp-sdqrij.streamlitapp.com/) as a frontend development tool to display our result in a user friendly UI. 
 
 ## Group 12
