@@ -8,7 +8,7 @@
 ## Output Notebooks 
 * Streamlit deployment: https://albakomito-g12-project-2-streamlitapp-sdqrij.streamlitapp.com/
 * Note: all coding instructions are contained within each individual notebook. 
-* Algorithmic_trading_Final.ipynb: algorithmic trading code and outputs. 
+* Algorithmic_trading_FINAL.ipynb: algorithmic trading code and outputs. 
 * renewable_energy_part_2_Final.ipynb: machine learning model code. 
 
 ## Summary (Introduction)
